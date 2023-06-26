@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.numbers{
+  display: flex;
+}
+.box{
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  position: relative;
+}
+
+.enunciate{
+  background-color: #C1E6EC;
+  border-color: #CBE9EF;
+  font-weight: 300;
+  padding: 10px;
+  height: 23px;
+}
+
+.header{
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.btn{
+  background-color:#0070FF ;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 3px;
+  
+}

@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const MyButton3 = () => {
+    const [count, setCount] = useState(0);
+ 
+    return (
+        <div>
+            <header className="header">
+
+                Exercise 3
+            </header>
+            <p class="enunciate">
+                Iteration 1: Give the value of "x" from ComponentA to ComponentC
+                Iteration 2:Change the "x"when clicking on the button "x++"
+            </p>
+            <div>
+                <p>ComponentA</p>
+                <p>x={count}</p>
+                <div>
+                    <p>ComponentB</p>
+                    <p>x={count}</p>
+                    <div>
+                        <p>ComponentC</p>
+                        <p>x={count}</p>
+                        <button onClick={()=>setCount((count) => count + 1)}>x++</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    )
 }
-
-export default App;
+export default MyButton3;
